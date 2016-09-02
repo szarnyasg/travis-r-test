@@ -1,11 +1,6 @@
-language: java
-jdk:
-  - oraclejdk8
-addons:
-  apt:
-    packages:
-    - texlive-latex-extra
-    - texlive-science
+sudo: required
+dist: trusty
 install: false
 script:
+  - sudo apt-get install texlive-latex-extra texlive-science
   - pdflatex -shell-escape my.tex
