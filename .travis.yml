@@ -5,6 +5,7 @@ addons:
   apt:
     packages:
     - texlive-latex-extra
+    - texlive-science
 install: false
 script:
-  - pdflatex -shell-escape -interaction=batchmode my.tex
+  - pdflatex -shell-escape my.tex
