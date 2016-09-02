@@ -1,3 +1,10 @@
-language: r
-cache: packages
-
+language: java
+jdk:
+  - oraclejdk8
+addons:
+  apt:
+    packages:
+    - texlive-latex-extra
+install: false
+script:
+  - pdflatex -shell-escape -interaction=batchmode my.tex
